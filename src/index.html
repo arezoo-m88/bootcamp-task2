@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تسک دوره جاوااسکریپت</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="main-container container">
+      <div class="first-page">
+        <div class="header-container">
+          <h2 class="header">لیست تراکنش ها</h2>
+          <div class="search-btn">
+            <input class="search-input" type="text" placeholder="جستجوی تراکنش ها...">
+            <i class="fa-solid fa-magnifying-glass"></i>      
+          </div>
+        </div>
+        <div class="load-container">
+          <button class="load-btn">بارگذاری تراکنش ها</button>
+        </div>  
+      </div>
+      <section class="section">
+      <h1>لیست تراکنش های شما</h1>
+      <div class="table-container">
+        <div class="tbl-header">
+          <table cellpadding="0" cellspacing="0" border="0">
+            <thead>
+              <tr>
+                <th>ردیف</th>
+                <th>نوع تراکنش</th>
+                <th class="chevron price">مبلغ<i class="fa-solid fa-chevron-down price-chevron"></i></th>
+                <th>شماره پیگیری</th>
+                <th class="chevron date">تاریخ تراکنش<i class="fa-solid fa-chevron-down date-chevron"></i></th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+        <div class="tbl-content">
+          <table cellpadding="0" cellspacing="0" border="0">
+            <tbody class="table_body">
+            </tbody>
+          </table>
+        </div>
+      </div>
+      </section>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
