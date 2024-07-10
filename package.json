@@ -1,7 +1,6 @@
 {
   "name": "js-task",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "server": "json-server -p 3000 ./data/db.json --watch"
@@ -10,5 +9,14 @@
   "license": "ISC",
   "dependencies": {
     "json-server": "^0.17.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arezoo-m88/bootcamp-task2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/arezoo-m88/bootcamp-task2/issues"
+  },
+  "homepage": "https://github.com/arezoo-m88/bootcamp-task2#readme",
+  "description": ""
 }

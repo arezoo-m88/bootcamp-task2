@@ -72,11 +72,13 @@ class Action {
                 <tr>
                 <td>${data.id}</td>
                 <td ${
-                data.type == "افزایش اعتبار" ? "class='green'" : "class='red'"
+                  data.type == "افزایش اعتبار" ? "class='green'" : "class='red'"
                 }>${data.type}</td>
                 <td class="price-bold">${data.price}</td>
                 <td>${data.refId}</td>
-                <td>${data.date}</td>
+                <td>${new Date(data.date).toLocaleDateString(
+                  "fa-IR"
+                )} ساعت ${new Date(data.date).toLocaleTimeString("fa-IR", {timeStyle: "short"})}</td>
                 </tr>`;
         result += html;
         });
